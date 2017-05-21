@@ -52,7 +52,7 @@ def delete_stl_files(stl_folder_path, pattern_to_delete):
             if name in filename:
                 # try:
                 os.remove(os.path.join(stl_path, filename))
-                print '{} removed'.format(filename)
+                print('{} removed'.format(filename))
                 # except OSError:
                 #     raise 'A problem occured during the removing of {}'.format(filename)
 
@@ -71,10 +71,10 @@ def rename_stl_files(stl_folder_path, name_mapping, dest_path=None, specific_fol
         os.makedirs(destination_path)
 
     for filename in exported_stl_files:
-        for name, new_name in name_mapping.iteritems():
+        for name, new_name in name_mapping.items():
             if name in filename:
                 # try:
-                print '{} moved'.format(new_name)
+                print('{} moved'.format(new_name))
                 os.rename(os.path.join(stl_folder_path, filename), os.path.join(destination_path, new_name + '.STL'))
                 # except OSError as err:
                 #     print("OS error: {0}".format(err))

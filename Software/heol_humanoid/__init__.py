@@ -1,1 +1,1 @@
-from heol_humanoid import HeolHumanoid
+from .heol_humanoid import HeolHumanoid

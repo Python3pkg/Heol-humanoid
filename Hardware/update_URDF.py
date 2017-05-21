@@ -133,4 +133,4 @@ if __name__ == '__main__':
     wrong_motors=update_URDF_from_config(urdf_path, config_path)
     print("The URDF file has been updated")
     print("Motors axis changed for :")
-    print wrong_motors
+    print(wrong_motors)
